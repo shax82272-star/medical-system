@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -c \"import cv2; print\\('cv2 ok:', cv2.__version__\\)\")",
+      "Bash(python3 *)",
+      "Bash(node -e \"const { Brain } = require\\('./node_modules/lucide-react/dist/cjs/lucide-react.js'\\); console.log\\(Brain ? 'Brain ok' : 'Brain NOT found'\\)\")",
+      "Bash(node -e \"const { RefreshCw } = require\\('./node_modules/lucide-react/dist/cjs/lucide-react.js'\\); console.log\\(RefreshCw ? 'RefreshCw ok' : 'NOT found'\\)\")",
+      "Bash(npm run *)",
+      "Bash(netstat -tlnp)",
+      "Bash(curl -s http://localhost:8000/api/diagnoses/ -H \"Authorization: Token invalid\")",
+      "Bash(DJANGO_SETTINGS_MODULE=config.settings ./venv/bin/python *)",
+      "Bash(pip show *)",
+      "Bash(sqlite3 *)",
+      "Bash(curl *)"
+    ]
+  }
+}
